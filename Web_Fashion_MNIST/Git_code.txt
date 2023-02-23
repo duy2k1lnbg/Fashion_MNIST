@@ -1,0 +1,7 @@
+git init
+git remote add origin https://github.com/ziadimahdi/Fashion-MNIST_CNN.git
+git remote -v
+git add .
+git commit -m "Bild Model"
+git pull --rebase origin master
+git push origin master

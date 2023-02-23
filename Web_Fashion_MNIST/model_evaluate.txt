@@ -1,0 +1,20 @@
+three_layer_model.evaluate
+1s 129us/sample - loss: 0.2531 - accuracy: 0.8777
+Model with three layers and ten epochs -- Test loss: 34.901612492799764
+Model with three layers and ten epochs -- Test accuracy: 87.76999711990356
+----------------------------------------------------------------------------------------
+five_layer_model.evaluate
+s 81us/sample - loss: 0.2711 - accuracy: 0.8812
+Model with five layers and ten epochs -- Test loss: 34.545721228718755
+Model with five layers and ten epochs -- Test accuracy: 88.12000155448914
+----------------------------------------------------------------------------------------
+ten_layer_model.evaluate
+1s 134us/sample - loss: 0.2139 - accuracy: 0.8812
+Model with ten layers and ten epochs -- Test loss: 35.145979635715484
+Model with ten layers and ten epochs -- Test accuracy: 88.12000155448914
+----------------------------------------------------------------------------------------
+three_layer_model_50_epochs
+1s 86us/sample - loss: 0.3126 - accuracy: 0.8844
+Model with three layers and fifty epochs -- Test loss: 60.48260842964053
+Model with three layers and fifty epochs -- Test accuracy: 88.44000101089478
+

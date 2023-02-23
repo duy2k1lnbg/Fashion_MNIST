@@ -1,0 +1,247 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Fruity{% endblock %}
+
+{% block content %}
+<main>
+    <!-- Hero Section Begin -->
+    <section class="canvas" id="hero" style="overflow: hidden;">
+        <div class="row container">
+            <div class="row">
+                <div class="col col-xl-8 col-lg-12 col-md-12 col-sm-12 content-left">
+                    <article class="title">
+                        <h1>Freshly fruits is Always <br />the right choice</h1>
+                        <img src="{{ url_for('static', filename='img/traced-lines.svg') }}" alt="traced-lines" class="traced" />
+                    </article>
+                    <article class="sub-title">
+                        <p> Healthy Lifestyle isn’t a dream now, because we will help you to
+                            identify rotten fruit fast, so you get fresh fruit that is certainly
+                            safe for consumption.</p>
+                        <div class="utils">
+                            <a class="btn btn-primary fw-semibold try-now" href="fresh-rotten.html"
+                                role="button">Try Now</a>
+                            <a class="know-more" href="#how-it-works">Know More <i
+                                    class="bi bi-arrow-up-right text-white"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <figure class="row hero-image">
+            <div class="overlays"></div>
+            <img src="{{ url_for('static', filename='img/hero-image.png') }}" alt="hero image">
+        </figure>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Us Section Begin -->
+    <section class="about-us" id="about-us" style="overflow: hidden;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 text-left clearfix">
+                    <span>01 • About Us</span>
+                    <h2 class="fw-bold mt-1">Helping people to identify rotten <br> fruit fast</h2>
+                </div>
+                <div class="col-lg-6 text-about mt-4 clearfix" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="horizontal-line"></div>
+                    <p>Established in 2022, fruity’s goal is to help as many people as we can to identify rotten
+                        fruit fast by providing the most accurate predictions possible to increase their
+                        productivity.</p>
+                    <div class="learn-more mt-5">
+                        <a href="about.html">Learn More</a>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                    <div class="image-section mt-5">
+                        <img src="{{ url_for('static', filename='img/grading-fruits.png') }}" alt="grading fruits">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper clearfix" data-aos="fade-right" data-aos-duration="1000">
+                <div class="side-content">
+                    <span class="why fw-bold">Why Choose us ?</span>
+                    <div class="row rectangle-primary align-items-start">
+                        <div class="ellips-left"></div>
+                        <div class="row group-text align-items-center">
+                            <div class="col-auto text-item one">
+                                <span class="text-head fw-semibold">100k+</span>
+                                <span class="text-sub-head">People have tried</span>
+                            </div>
+                            <div class="col-auto text-item two">
+                                <span class="text-head fw-semibold">Accurate</span>
+                                <span class="text-sub-head">Give accurate results</span>
+                            </div>
+                            <div class="col-auto text-item three">
+                                <span class="text-head fw-semibold">Fast</span>
+                                <span class="text-sub-head">Quickly & easily identify</span>
+                            </div>
+                        </div>
+                        <div class="rectangle-secondary"></div>
+                        <div class="ellips-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-mask mt-5">
+            <img src="{{ url_for('static', filename='img/mask.png') }}" alt="mask">
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- Our Service Section Begin -->
+    <section class="services" id="services" style="overflow: hidden;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <span class="section-title">02 • Services</span>
+                    <h2 class="section-sub-title mt-2">Our Services</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <a class="text-decoration-none" href="{{ url_for('fresh_rotten') }}">
+                    <div class="cardBox">
+                        <div class="card">
+                            <img src="{{ url_for('static', filename='img/fruits-identification.jpg') }}" class="card-img-top"
+                                    alt="people">
+                            <div class="card-info">
+                                <h5 class="fw-bold">Fresh Fruit Identification</h5>
+                                <p class="card-text">Our service will help you identify fresh or rotten fruit quite
+                                    easily. Just upload an image of your fruit, and you will get the results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="circle-left">
+            <img src="{{ url_for('static', filename='img/ellips.svg') }}" alt="circle-left">
+        </div>
+        <div class="circle-right">
+            <img src="{{ url_for('static', filename='img/ellips.svg') }}" alt="circle-right">
+        </div>
+    </section>
+    <!-- Our Service End -->
+
+    <!-- How it Works Section Begin -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <span class="section-title">03 • How to use</span>
+                    <h2 class="section-sub-title mt-2">How It Works?</h2>
+                </div>
+            </div>
+            <article class="row contents g-0">
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="content-card">
+                        <img src="{{ url_for('static', filename='img/prepare-fruits.png') }}" alt="people with fruits">
+                    </div>
+                    <div class="content-card cards card-colors">
+                        <div class="overlay"></div>
+                        <div class="circles">
+                            <i class="fa-solid fa-images"></i>
+                        </div>
+                        <h4>Prepare Your Image</h4>
+                        <p>To use Fruity, prepare an image of the fruit you want to identify. Then, please tap the
+                            service menu on the homepage. So, upload your image and press the identification button.</p>
+                    </div>
+                </div>
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="content-card cards card-colors">
+                        <div class="overlay"></div>
+                        <div class="circles">
+                            <ion-icon name="finger-print"></ion-icon>
+                        </div>
+                        <h4>Identify</h4>
+                        <p>Fruity is the powerful utility that offers the fastest way to identify fresh or rotten
+                            fruit in seconds. The system will work to classify your fruits by just waiting one second.</p>
+                    </div>
+                    <div class="content-card">
+                        <img src="{{ url_for('static', filename='img/fruits.png') }}" alt="fruits">
+                    </div>
+                </div>
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="content-card">
+                        <img src="{{ url_for('static', filename='img/holding-fruits.png') }}" alt="holding-fruits">
+                    </div>
+                    <div class="content-card cards card-colors">
+                        <div class="overlay"></div>
+                        <div class="circles">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+                        <h4>Result</h4>
+                        <p>The app displays information on the page about whether your fruit is fresh or rotten.</p>
+                        <br><br>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- How it Works End -->
+
+    <!-- Testimonial Section Begin -->
+    <section id="testimonials" class="testimonials" style="overflow: hidden;">
+        <div class="container">
+            <img class="sun-bg" src="{{ url_for('static', filename='img/sun-background.svg') }}" alt="background-sun">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <span class="section-title">04 • Testimonials</span>
+                    <h2 class="section-sub-title mt-2">What People Say About Us</h2>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="slider">
+                    <div class="icon-slide">
+                        <i class="bi bi-arrow-left" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"></i>
+                        <i class="bi bi-arrow-right" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"></i>
+                    </div>
+                </div>
+                <div class="carousel-inner" id="review-list"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+
+    <!-- Gallery Section Begin -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <span class="section-title">05 • Gallery</span>
+                    <h2 class="section-sub-title mt-2 mb-4">Our Fresh Fruits</h2>
+                </div>
+            </div>
+            <div class="image-gallery mt-5" id="image-gallery" style="overflow: hidden;"></div>
+        </div>
+    </section>
+    <!-- Gallery End -->
+
+    <!-- FAQ Section Begin -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-1 vertical-line"></div>
+                <div class="col-11">
+                    <span class="section-title">05 • FAQ</span>
+                    <h2 class="section-sub-title mt-2">Any questions?</h2>
+                    <p class="mt-3">If you have any questions, you may find your answer on this FAQ.<br>
+                        Not answered yet ? email us on <span class="fw-bold">muhammad.himawan73@gmail.com</span></p>
+                </div>
+            </div>
+            <article class="faq-list mt-4" id="faq-list"></article>
+        </div>
+    </section>
+    <!-- FAQ Section End -->
+</main>
+{% endblock %}
+
+{% block footer %}
+{% include 'includes/footer-index.html' %}
+{% endblock %}
+
+<!-- scripts JS -->
+{% block javascripts %}
+<script type="module" src="{{ url_for('static', filename='js/script-index.js') }}" defer></script>
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+{% endblock %}

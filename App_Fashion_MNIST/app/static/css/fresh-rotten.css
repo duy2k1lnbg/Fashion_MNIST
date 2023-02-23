@@ -1,0 +1,117 @@
+/* Styleguide */
+@import "styleguide.css";
+
+
+/* Body Section */
+body {
+    position: relative;
+}
+
+
+/* Navbar Section */
+.navbar {
+    background-color: var(--green-primary);
+}
+
+
+/* Fresh Rotten Section */
+.fresh-rotten {
+    background-color: var(--cream);
+    padding: 3rem 0 13rem 0;
+    min-height: 100vh;
+}
+
+.title>h3 {
+    color: var(--greenish-black);
+    font-size: 26px;
+}
+
+.title>img {
+    margin: 0 auto;
+}
+
+form>.input-group {
+    border: 1px solid var(--purple-white-dark);
+    border-radius: 0.25rem;
+}
+
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.input-group-append>label {
+    background-color: var(--purple-white);
+    border-color: var(--purple-white-light);
+}
+
+.input-group-append i {
+    margin-right: 10px;
+}
+
+form>.image-area {
+    position: relative;
+    border: 2px dashed var(--red-black);
+    border-radius: 0.25rem;
+    padding: 1.1rem;
+}
+
+form>.image-area::before {
+    content: 'Uploaded Image Result';
+    color: var(--red-black-8);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.85rem;
+    z-index: 1;
+}
+
+form>.image-area>img {
+    position: relative;
+    z-index: 2;
+}
+
+.fresh-rotten button {
+    width: 100%;
+    font-weight: 500;
+    border: 2px solid var(--cream);
+    background-color: var(--green-light);
+}
+
+.fresh-rotten button:active {
+    border-color: var(--green-light) !important;
+    background-color: var(--green-primary) !important;
+}
+
+.fresh-rotten button:hover {
+    border-color: var(--cream);
+    background-color: var(--green-primary);
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    background-color: var(--green-primary);
+    display: flex;
+}
+
+.footer>.container {
+    margin: auto;
+}
+
+.footer-content>p {
+    margin: 0;
+}
